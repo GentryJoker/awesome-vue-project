@@ -1,0 +1,50 @@
+/*
+	变量命名
+		说在前面:
+			1、当不知道是该使用 $common 前缀还是 &rests 前缀时，使用 &rests 前缀；
+
+		常规变量命名:
+			1、使用 $common 前缀，使用横岗(-)分开，加上权重、场景 defult(默认)，再加上用途 color(字体颜色)。也可以使用序号(number拼接数字) number1。
+				1)示例
+					默认 $common-defult-color: #fff;
+					序号 $common-number1-color: #fff;
+
+				2)使用 $common 前缀，使用横岗(-)分开，加上权重、场景 defult(默认)，再加上用途 color(字体颜色)；
+
+			2、命名规范
+				规范
+					默认 defult
+					主要 primary
+					成功 success
+					信息 info
+					警告 warning
+					危险 danger
+
+				示例
+					默认 $common-defult-color: #fff;
+					主要 $common-primary-color: #409eff;
+					成功 $common-success-color: #67c23a;
+					信息 $common-info-color: #909399;
+					警告 $common-warning-color: #e6a23c;
+					危险 $common-danger-color: #f56c6c;
+
+		其他变量命名规范:
+			使用 $rests 前缀，使用横岗(-)分开，加上序号(number拼接数字) number1 ，再加上用途 color(字体颜色)；
+				示例
+					默认 $rests-number1-color: #fff;
+*/
+
+// 其他样式
+@import './reset.css';
+// @import './border.css';
+@import '../iconfont/iconfont.css'; // 字体图标库
+// 其他样式 end
+
+// 字体变量
+$common-defult-font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+// 字体变量 end
+
+// 颜色变量
+$rests-number1-color: red;
+// 颜色变量 end
+
